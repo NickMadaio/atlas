@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Xcode build output (all local derived-data and archive folders)
+build/
+.build/
+.build-core/
+.builds/
+.derived*/
+.sourcepackages*/
+DerivedData/
+*.xcarchive
+
+# Per-user Xcode state
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+packages/AtlasCore/.build/
+packages/AtlasCore/.swiftpm/
+
+# Local, uncommitted configuration layers (backend URLs, signing overrides)
+*.local.xcconfig
