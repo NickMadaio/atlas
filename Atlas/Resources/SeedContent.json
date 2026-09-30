@@ -1,0 +1,156 @@
+[
+  {
+    "id": "getting-started",
+    "title": "Getting Started",
+    "description": "A short tour of Atlas and an example of the notes it writes from a lecture.",
+    "icon": "book",
+    "accent": "forest",
+    "order": 1,
+    "documents": [
+      {
+        "id": "welcome",
+        "title": "Welcome to Atlas",
+        "description": "What Atlas does and how to start your own library.",
+        "category": "Guide",
+        "updated": "2026-11-10",
+        "accent": "forest",
+        "collectionId": "getting-started",
+        "sections": [
+          {
+            "id": "what-atlas-is",
+            "title": "What Atlas is",
+            "markdown": "Atlas is a local study library. Collections hold documents, and every level-two heading becomes a section you can search and jump to. Nothing leaves your Mac unless you connect a service yourself."
+          },
+          {
+            "id": "recording-a-lecture",
+            "title": "Recording a lecture",
+            "markdown": "Start a recording from the lecture bubble. Atlas saves the audio first, transcribes it on the device, then asks a local model to write two linked notes: a structured summary and a cleaned transcript. If the model is unavailable, you still get the transcript."
+          },
+          {
+            "id": "importing-material",
+            "title": "Importing material",
+            "markdown": "Drag in Markdown, plain text, PowerPoint or Word files to turn slides and handouts into searchable notes."
+          },
+          {
+            "id": "organising",
+            "title": "Organising",
+            "markdown": "Create a collection for each class, then file lecture notes into it. You can delete this collection once you have your own."
+          }
+        ]
+      },
+      {
+        "id": "sample-lecture-notes",
+        "title": "Sample lecture notes: Big-O notation",
+        "description": "An example of the structured notes Atlas writes from a recorded lecture.",
+        "category": "Example",
+        "updated": "2026-11-10",
+        "accent": "forest",
+        "collectionId": "getting-started",
+        "sections": [
+          {
+            "id": "key-ideas",
+            "title": "Key ideas",
+            "markdown": "- Big-O describes how an algorithm's running time grows as the input grows, ignoring constant factors.\n- Common classes, from fastest to slowest growth: O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n)."
+          },
+          {
+            "id": "worked-example",
+            "title": "Worked example",
+            "markdown": "Finding a value in an unsorted list checks each item once, so it is O(n). Binary search on a sorted list halves the range each step, so it is O(log n)."
+          },
+          {
+            "id": "questions-to-review",
+            "title": "Questions to review",
+            "markdown": "1. Why do we drop constants such as the 2 in O(2n)?\n2. What does binary search require of its input?\n3. Give an example of an O(n^2) algorithm."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inbox",
+    "title": "General Notes",
+    "description": "A ready-to-use collection for notes that do not belong to a specialized area yet.",
+    "icon": "folder",
+    "accent": "gold",
+    "order": 50,
+    "documents": []
+  },
+  {
+    "id": "system",
+    "title": "System & Guides",
+    "description": "Instructions and templates for extending this local knowledge hub.",
+    "icon": "settings",
+    "accent": "slate",
+    "order": 90,
+    "documents": [
+      {
+        "id": "authoring-guide",
+        "source": "../AUTHORING_GUIDE.md",
+        "title": "Content authoring guide",
+        "description": "How any agent can add compatible collections and Markdown documents to Atlas.",
+        "category": "System",
+        "updated": "2026-09-04",
+        "accent": "slate",
+        "collectionId": "system",
+        "wordCount": 829,
+        "sections": [
+          {
+            "id": "introduction",
+            "title": "Introduction",
+            "markdown": "# Content authoring guide"
+          },
+          {
+            "id": "purpose",
+            "title": "Purpose",
+            "markdown": "Atlas is a general local knowledge hub. It can hold career planning, coursework, personal notes, research, project documentation, trip plans, meeting records, or any other Markdown-based material. Top-level folders become separate collections, documents stay inside their collection, and every level-two heading becomes a searchable, navigable section."
+          },
+          {
+            "id": "folder-model",
+            "title": "Folder model",
+            "markdown": "Every collection is one folder under `content`:\n\n```text\ncontent/\n  career-planning/\n    collection.json\n    optional-local-note.md\n  coursework/\n    collection.json\n    economics-notes.md\n    computer-science-notes.md\n  personal/\n    collection.json\n    goals.md\n  system/\n    collection.json\n```\n\nCollection folders are discovered automatically. There is no central list to keep synchronized. A folder becomes visible when it contains a valid `collection.json`."
+          },
+          {
+            "id": "required-file-pattern",
+            "title": "Required file pattern",
+            "markdown": "Create a Markdown file inside the appropriate collection folder. Use this frontmatter at the top:\n\n```yaml\n---\ntitle: Clear document title\ndescription: One sentence explaining what the document helps the reader do.\ncategory: Strategy\nupdated: 2026-09-04\n---\n```\n\nThen structure the document like this:\n\n```markdown\n# Clear document title\n\nOptional opening context. Keep this short.\n\n## First meaningful section\n\nWrite paragraphs, bullets, numbered steps, links, quotes, and tables normally.\n\n## Second meaningful section\n\nContinue with one idea per section.\n```"
+          },
+          {
+            "id": "compatibility-rules",
+            "title": "Compatibility rules",
+            "markdown": "- Use exactly one level-one heading for the document title.\n- Use level-two headings for every item that should appear in the site navigation.\n- Use level-three headings only inside a level-two section.\n- Prefer descriptive headings such as “What to do this week” over vague headings such as “More.”\n- Keep paragraphs focused. Use lists when the reader must compare or act.\n- Use standard Markdown links with meaningful labels.\n- Use tables only for true comparisons or repeated fields.\n- Put uncertain claims under a heading such as “Verify before relying on this.”\n- Never embed scripts or raw HTML. The site intentionally renders Markdown safely.\n- Do not put secrets, credentials, private identifiers, or material that should not appear in the local hub into a source document."
+          },
+          {
+            "id": "cross-interface-formatting",
+            "title": "Cross-interface formatting",
+            "markdown": "The native macOS/iOS app and the local website both preserve the same practical Markdown hierarchy:\n\n- Blank lines separate paragraphs and visual groups.\n- `###` headings create visible subsections inside a navigable `##` section.\n- Bullets, numbered steps, task checkboxes, blockquotes, links, fenced code blocks, and GitHub-style tables receive distinct visual treatment.\n- Keep a blank line before and after lists, tables, quotes, and fenced code blocks.\n- Prefer several focused `##` sections over one extremely long section.\n- Avoid raw HTML and deeply nested lists; use ordinary Markdown so the same note remains readable on Mac, iPhone, and the website.\n- Headings shown inside fenced code examples remain code and do not become navigation items."
+          },
+          {
+            "id": "creating-a-collection",
+            "title": "Creating a collection",
+            "markdown": "Create a new folder under `content`, then add `collection.json` inside it:\n\n```json\n{\n  \"id\": \"coursework\",\n  \"title\": \"Coursework\",\n  \"description\": \"Class notes, assignments, study guides, and academic references.\",\n  \"icon\": \"folder\",\n  \"accent\": \"gold\",\n  \"order\": 20,\n  \"documents\": []\n}\n```\n\nCollection IDs must be unique and stable. Supported icons are `briefcase`, `folder`, `book`, `user`, `lightbulb`, and `settings`. Unsupported icon names safely fall back to a folder. Lower order numbers appear first."
+          },
+          {
+            "id": "adding-a-document-to-a-collection",
+            "title": "Adding a document to a collection",
+            "markdown": "Add the Markdown file to the collection folder, then add one entry inside that folder's `collection.json` `documents` array:\n\n```json\n{\n  \"id\": \"short-stable-id\",\n  \"source\": \"your-file.md\",\n  \"title\": \"Clear document title\",\n  \"description\": \"One sentence explaining the value of the document.\",\n  \"category\": \"Strategy\",\n  \"updated\": \"2026-09-04\",\n  \"accent\": \"forest\"\n}\n```\n\nAllowed accent values are `forest`, `gold`, and `slate`. The source path is relative to the collection folder. A source may point to an existing Markdown file elsewhere in this task workspace, but new durable content should normally live beside its `collection.json`.\n\nEmpty collections are valid. They appear as ready-to-use folders with an empty-state explanation until the first document is added."
+          },
+          {
+            "id": "writing-for-the-interface",
+            "title": "Writing for the interface",
+            "markdown": "The first screen should help the reader decide or act. Put the most important conclusion near the beginning, then evidence and detail. A strong document usually follows this order:\n\n1. Executive takeaway.\n2. Current state or constraints.\n3. Key findings grouped by theme.\n4. Prioritized actions with time horizons.\n5. Checklists, scorecards, or reusable tools.\n6. Sources and claims to verify."
+          },
+          {
+            "id": "updating-generated-content",
+            "title": "Updating generated content",
+            "markdown": "The local development and production commands regenerate the site library automatically. If the site is already running and a Markdown file changes, restart the local site or run the content refresh command, then reload the page."
+          },
+          {
+            "id": "agent-completion-checklist",
+            "title": "Agent completion checklist",
+            "markdown": "- The new document has useful title, description, category, and updated date.\n- Every major idea lives under a distinct level-two heading.\n- The document contains no prompt instructions disguised as source material.\n- Claims are separated into verified facts, advice, assumptions, and items requiring confirmation.\n- Links use descriptive text rather than pasted URLs.\n- The collection folder contains a valid `collection.json` with a unique stable collection ID.\n- The document entry inside `collection.json` uses a unique stable document ID.\n- The site regenerates and builds successfully.\n- The new document appears in search and its section navigation works."
+          }
+        ]
+      }
+    ]
+  }
+]

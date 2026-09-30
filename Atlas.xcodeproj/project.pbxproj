@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AtlasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AtlasApp.swift */; };
+		A10000000000000000000002 /* AtlasAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* AtlasAppModel.swift */; };
+		A10000000000000000000003 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* RootView.swift */; };
+		A10000000000000000000004 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* LoginView.swift */; };
+		A10000000000000000000005 /* WorkspaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* WorkspaceView.swift */; };
+		A10000000000000000000006 /* DocumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* DocumentDetailView.swift */; };
+		A10000000000000000000007 /* EditorViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* EditorViews.swift */; };
+		A10000000000000000000008 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* PrivacyInfo.xcprivacy */; };
+		A10000000000000000000009 /* SeedContent.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* SeedContent.json */; };
+		A1000000000000000000000A /* AtlasCore in Frameworks */ = {isa = PBXBuildFile; productRef = A90000000000000000000002 /* AtlasCore */; };
+		A1000000000000000000000B /* AtlasDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* AtlasDesign.swift */; };
+		A1000000000000000000000C /* RichMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* RichMarkdownView.swift */; };
+		A1000000000000000000000D /* AtlasAgentBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* AtlasAgentBridge.swift */; };
+		A1000000000000000000000E /* ContextAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* ContextAssistantView.swift */; };
+		A1000000000000000000000F /* LectureRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* LectureRecorder.swift */; };
+		A10000000000000000000011 /* LectureCaptureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000019 /* LectureCaptureModel.swift */; };
+		A10000000000000000000012 /* LectureRecordBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001A /* LectureRecordBar.swift */; };
+		A10000000000000000000013 /* LecturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001B /* LecturesView.swift */; };
+		A10000000000000000000014 /* AtlasFormControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001C /* AtlasFormControls.swift */; };
+		A10000000000000000000015 /* CollectionTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001D /* CollectionTree.swift */; };
+		A10000000000000000000016 /* WorkspaceCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001E /* WorkspaceCards.swift */; };
+		A10000000000000000000017 /* LectureRecordingBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001F /* LectureRecordingBubble.swift */; };
+		A10000000000000000000018 /* LectureTranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000020 /* LectureTranscriptView.swift */; };
+		A10000000000000000000019 /* LectureAttachmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000021 /* LectureAttachmentsView.swift */; };
+		A1000000000000000000001A /* AtlasUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000022 /* AtlasUI.swift */; };
+		A10000000000000000000030 /* AtlasSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000030 /* AtlasSettingsStore.swift */; };
+		A10000000000000000000032 /* CodeBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000032 /* CodeBlockView.swift */; };
+		A10000000000000000000033 /* NoteEmbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000033 /* NoteEmbedView.swift */; };
+		A10000000000000000000034 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000034 /* SettingsView.swift */; };
+		A10000000000000000000035 /* SettingsPanels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000035 /* SettingsPanels.swift */; };
+		A10000000000000000000036 /* CourseContextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000036 /* CourseContextView.swift */; };
+		A10000000000000000000037 /* WindowFit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000037 /* WindowFit.swift */; };
+		A10000000000000000000038 /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000038 /* CalloutView.swift */; };
+		A10000000000000000000039 /* ImportNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000039 /* ImportNotesView.swift */; };
+		A10000000000000000000040 /* TrackpadSketchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000040 /* TrackpadSketchModel.swift */; };
+		A10000000000000000000041 /* TrackpadCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000041 /* TrackpadCaptureView.swift */; };
+		A10000000000000000000042 /* SketchCanvasRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000042 /* SketchCanvasRenderer.swift */; };
+		A10000000000000000000043 /* TrackpadSketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000043 /* TrackpadSketchView.swift */; };
+		A10000000000000000000044 /* SketchEmbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000044 /* SketchEmbedView.swift */; };
+		A10000000000000000000045 /* SketchSaveSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000045 /* SketchSaveSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* AtlasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* AtlasAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasAppModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* WorkspaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceView.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* DocumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentDetailView.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* EditorViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViews.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A20000000000000000000009 /* SeedContent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SeedContent.json; sourceTree = "<group>"; };
+		A2000000000000000000000A /* Atlas-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Atlas-iOS.entitlements"; sourceTree = "<group>"; };
+		A2000000000000000000000B /* Atlas-macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Atlas-macOS.entitlements"; sourceTree = "<group>"; };
+		A2000000000000000000000C /* Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atlas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000000000000000000000D /* Local.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000E /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000F /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		A20000000000000000000010 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A20000000000000000000011 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
+		A20000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000013 /* AtlasDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasDesign.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* RichMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichMarkdownView.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* AtlasAgentBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasAgentBridge.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* ContextAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextAssistantView.swift; sourceTree = "<group>"; };
+		A20000000000000000000017 /* LectureRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureRecorder.swift; sourceTree = "<group>"; };
+		A20000000000000000000019 /* LectureCaptureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureCaptureModel.swift; sourceTree = "<group>"; };
+		A2000000000000000000001A /* LectureRecordBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureRecordBar.swift; sourceTree = "<group>"; };
+		A2000000000000000000001B /* LecturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturesView.swift; sourceTree = "<group>"; };
+		A2000000000000000000001C /* AtlasFormControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasFormControls.swift; sourceTree = "<group>"; };
+		A2000000000000000000001D /* CollectionTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTree.swift; sourceTree = "<group>"; };
+		A2000000000000000000001E /* WorkspaceCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceCards.swift; sourceTree = "<group>"; };
+		A2000000000000000000001F /* LectureRecordingBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureRecordingBubble.swift; sourceTree = "<group>"; };
+		A20000000000000000000020 /* LectureTranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTranscriptView.swift; sourceTree = "<group>"; };
+		A20000000000000000000021 /* LectureAttachmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureAttachmentsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000022 /* AtlasUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasUI.swift; sourceTree = "<group>"; };
+		A20000000000000000000030 /* AtlasSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasSettingsStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000032 /* CodeBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlockView.swift; sourceTree = "<group>"; };
+		A20000000000000000000033 /* NoteEmbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEmbedView.swift; sourceTree = "<group>"; };
+		A20000000000000000000034 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000035 /* SettingsPanels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPanels.swift; sourceTree = "<group>"; };
+		A20000000000000000000036 /* CourseContextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseContextView.swift; sourceTree = "<group>"; };
+		A20000000000000000000037 /* WindowFit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFit.swift; sourceTree = "<group>"; };
+		A20000000000000000000038 /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
+		A20000000000000000000039 /* ImportNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportNotesView.swift; sourceTree = "<group>"; };
+		A20000000000000000000040 /* TrackpadSketchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadSketchModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000041 /* TrackpadCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadCaptureView.swift; sourceTree = "<group>"; };
+		A20000000000000000000042 /* SketchCanvasRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchCanvasRenderer.swift; sourceTree = "<group>"; };
+		A20000000000000000000043 /* TrackpadSketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadSketchView.swift; sourceTree = "<group>"; };
+		A20000000000000000000044 /* SketchEmbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchEmbedView.swift; sourceTree = "<group>"; };
+		A20000000000000000000045 /* SketchSaveSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchSaveSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000A /* AtlasCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000011 /* AGENTS.md */,
+				A20000000000000000000010 /* README.md */,
+				A40000000000000000000002 /* Atlas */,
+				A40000000000000000000005 /* Config */,
+				A40000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* AtlasApp.swift */,
+				A20000000000000000000013 /* AtlasDesign.swift */,
+				A20000000000000000000022 /* AtlasUI.swift */,
+				A20000000000000000000015 /* AtlasAgentBridge.swift */,
+				A20000000000000000000002 /* AtlasAppModel.swift */,
+				A40000000000000000000007 /* Lectures */,
+				A40000000000000000000008 /* Sketch */,
+				A40000000000000000000003 /* Views */,
+				A40000000000000000000004 /* Resources */,
+				A20000000000000000000030 /* AtlasSettingsStore.swift */,
+			);
+			path = Atlas;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000003 /* RootView.swift */,
+				A20000000000000000000004 /* LoginView.swift */,
+				A20000000000000000000005 /* WorkspaceView.swift */,
+				A2000000000000000000001E /* WorkspaceCards.swift */,
+				A20000000000000000000006 /* DocumentDetailView.swift */,
+				A20000000000000000000016 /* ContextAssistantView.swift */,
+				A20000000000000000000014 /* RichMarkdownView.swift */,
+				A20000000000000000000007 /* EditorViews.swift */,
+				A2000000000000000000001C /* AtlasFormControls.swift */,
+				A2000000000000000000001D /* CollectionTree.swift */,
+				A2000000000000000000001A /* LectureRecordBar.swift */,
+				A2000000000000000000001B /* LecturesView.swift */,
+				A20000000000000000000020 /* LectureTranscriptView.swift */,
+				A20000000000000000000021 /* LectureAttachmentsView.swift */,
+				A20000000000000000000032 /* CodeBlockView.swift */,
+				A20000000000000000000033 /* NoteEmbedView.swift */,
+				A20000000000000000000034 /* SettingsView.swift */,
+				A20000000000000000000035 /* SettingsPanels.swift */,
+				A20000000000000000000036 /* CourseContextView.swift */,
+				A20000000000000000000037 /* WindowFit.swift */,
+				A20000000000000000000038 /* CalloutView.swift */,
+				A20000000000000000000039 /* ImportNotesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000012 /* Info.plist */,
+				A20000000000000000000008 /* PrivacyInfo.xcprivacy */,
+				A20000000000000000000009 /* SeedContent.json */,
+				A2000000000000000000000A /* Atlas-iOS.entitlements */,
+				A2000000000000000000000B /* Atlas-macOS.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000D /* Local.xcconfig */,
+				A2000000000000000000000E /* Staging.xcconfig */,
+				A2000000000000000000000F /* Production.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000C /* Atlas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Lectures */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000017 /* LectureRecorder.swift */,
+				A2000000000000000000001F /* LectureRecordingBubble.swift */,
+				A20000000000000000000019 /* LectureCaptureModel.swift */,
+			);
+			path = Lectures;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Sketch */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000040 /* TrackpadSketchModel.swift */,
+				A20000000000000000000041 /* TrackpadCaptureView.swift */,
+				A20000000000000000000042 /* SketchCanvasRenderer.swift */,
+				A20000000000000000000043 /* TrackpadSketchView.swift */,
+				A20000000000000000000044 /* SketchEmbedView.swift */,
+				A20000000000000000000045 /* SketchSaveSheet.swift */,
+			);
+			path = Sketch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* Atlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80000000000000000000002 /* Build configuration list for PBXNativeTarget "Atlas" */;
+			buildPhases = (
+				A60000000000000000000001 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A60000000000000000000002 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = Atlas;
+			packageProductDependencies = (
+				A90000000000000000000002 /* AtlasCore */,
+			);
+			productName = Atlas;
+			productReference = A2000000000000000000000C /* Atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = A80000000000000000000001 /* Build configuration list for PBXProject "Atlas" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A40000000000000000000001;
+			packageReferences = (
+				A90000000000000000000001 /* XCLocalSwiftPackageReference "packages/AtlasCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A40000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A50000000000000000000001 /* Atlas */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A60000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* PrivacyInfo.xcprivacy in Resources */,
+				A10000000000000000000009 /* SeedContent.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* AtlasApp.swift in Sources */,
+				A1000000000000000000000B /* AtlasDesign.swift in Sources */,
+				A1000000000000000000001A /* AtlasUI.swift in Sources */,
+				A1000000000000000000000D /* AtlasAgentBridge.swift in Sources */,
+				A10000000000000000000002 /* AtlasAppModel.swift in Sources */,
+				A10000000000000000000003 /* RootView.swift in Sources */,
+				A10000000000000000000004 /* LoginView.swift in Sources */,
+				A10000000000000000000005 /* WorkspaceView.swift in Sources */,
+				A10000000000000000000016 /* WorkspaceCards.swift in Sources */,
+				A10000000000000000000006 /* DocumentDetailView.swift in Sources */,
+				A1000000000000000000000E /* ContextAssistantView.swift in Sources */,
+				A1000000000000000000000C /* RichMarkdownView.swift in Sources */,
+				A10000000000000000000007 /* EditorViews.swift in Sources */,
+				A10000000000000000000014 /* AtlasFormControls.swift in Sources */,
+				A10000000000000000000015 /* CollectionTree.swift in Sources */,
+				A1000000000000000000000F /* LectureRecorder.swift in Sources */,
+				A10000000000000000000017 /* LectureRecordingBubble.swift in Sources */,
+				A10000000000000000000011 /* LectureCaptureModel.swift in Sources */,
+				A10000000000000000000012 /* LectureRecordBar.swift in Sources */,
+				A10000000000000000000013 /* LecturesView.swift in Sources */,
+				A10000000000000000000018 /* LectureTranscriptView.swift in Sources */,
+				A10000000000000000000019 /* LectureAttachmentsView.swift in Sources */,
+				A10000000000000000000039 /* ImportNotesView.swift in Sources */,
+				A10000000000000000000038 /* CalloutView.swift in Sources */,
+				A10000000000000000000037 /* WindowFit.swift in Sources */,
+				A10000000000000000000040 /* TrackpadSketchModel.swift in Sources */,
+				A10000000000000000000041 /* TrackpadCaptureView.swift in Sources */,
+				A10000000000000000000042 /* SketchCanvasRenderer.swift in Sources */,
+				A10000000000000000000043 /* TrackpadSketchView.swift in Sources */,
+				A10000000000000000000044 /* SketchEmbedView.swift in Sources */,
+				A10000000000000000000045 /* SketchSaveSheet.swift in Sources */,
+				A10000000000000000000036 /* CourseContextView.swift in Sources */,
+				A10000000000000000000035 /* SettingsPanels.swift in Sources */,
+				A10000000000000000000034 /* SettingsView.swift in Sources */,
+				A10000000000000000000033 /* NoteEmbedView.swift in Sources */,
+				A10000000000000000000032 /* CodeBlockView.swift in Sources */,
+				A10000000000000000000030 /* AtlasSettingsStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B10000000000000000000001 /* Local */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 18.0; MACOSX_DEPLOYMENT_TARGET = 15.0; SWIFT_VERSION = 6.0; }; name = Local; };
+		B10000000000000000000002 /* Staging */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 18.0; MACOSX_DEPLOYMENT_TARGET = 15.0; SWIFT_VERSION = 6.0; }; name = Staging; };
+		B10000000000000000000003 /* Production */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; GCC_C_LANGUAGE_STANDARD = gnu17; IPHONEOS_DEPLOYMENT_TARGET = 18.0; MACOSX_DEPLOYMENT_TARGET = 15.0; SWIFT_COMPILATION_MODE = wholemodule; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_VERSION = 6.0; VALIDATE_PRODUCT = YES; }; name = Production; };
+		B10000000000000000000004 /* Local */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000D /* Local.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "Atlas/Resources/Atlas-iOS.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "Atlas/Resources/Atlas-iOS.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Atlas/Resources/Atlas-macOS-Local.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Atlas/Resources/Info.plist;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Local;
+		};
+		B10000000000000000000005 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000E /* Staging.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "Atlas/Resources/Atlas-iOS.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "Atlas/Resources/Atlas-iOS.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Atlas/Resources/Atlas-macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Atlas/Resources/Info.plist;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		B10000000000000000000006 /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2000000000000000000000F /* Production.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "Atlas/Resources/Atlas-iOS.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = "Atlas/Resources/Atlas-iOS.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Atlas/Resources/Atlas-macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Atlas/Resources/Info.plist;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80000000000000000000001 /* Build configuration list for PBXProject "Atlas" */ = {isa = XCConfigurationList; buildConfigurations = (B10000000000000000000001, B10000000000000000000002, B10000000000000000000003); defaultConfigurationIsVisible = 0; defaultConfigurationName = Local; };
+		A80000000000000000000002 /* Build configuration list for PBXNativeTarget "Atlas" */ = {isa = XCConfigurationList; buildConfigurations = (B10000000000000000000004, B10000000000000000000005, B10000000000000000000006); defaultConfigurationIsVisible = 0; defaultConfigurationName = Local; };
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A90000000000000000000001 /* XCLocalSwiftPackageReference "packages/AtlasCore" */ = {isa = XCLocalSwiftPackageReference; relativePath = packages/AtlasCore; };
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A90000000000000000000002 /* AtlasCore */ = {isa = XCSwiftPackageProductDependency; productName = AtlasCore; };
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A70000000000000000000001 /* Project object */;
+}
