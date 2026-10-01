@@ -12,7 +12,7 @@ If the app cannot open its library, preserve the existing app container before t
 
 The working macOS build is installed at `/Applications/Atlas.app` with bundle
 ID `com.nickmadaio.atlas.local`. It uses the sandbox-only Local entitlement and
-the owner's existing local signing identity. Replacing the bundle does not
+the existing local signing identity. Replacing the bundle does not
 replace its app container or notes. Preserve the prior bundle in a temporary
 backup, verify the new signature, launch it normally, and complete a typed
 agent read plus conflict-safe update before calling the installation healthy.
@@ -27,4 +27,4 @@ Sign Out removes the refresh-token Keychain item and clears the in-memory access
 
 ## Release gates
 
-Before any external release, complete the applicable §19.2 checklist in `AGENTS.md`, including real-device testing, signing, privacy disclosures, support/privacy URLs, and—for macOS direct distribution—notarization and stapling.
+Before any external release, complete real-device testing, signing, privacy disclosures, support/privacy URLs, and—for macOS direct distribution—notarization and stapling.

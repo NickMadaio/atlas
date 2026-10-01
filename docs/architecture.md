@@ -70,7 +70,7 @@ Offline workspace access is not an authenticated account and is labeled accordin
 1. Apple capabilities and signing are configured for the final bundle identifiers.
 2. `ATLAS_API_BASE_URL` points to an HTTPS service.
 3. The service implements `/v1/auth/apple`, verifies Apple's signed credential, creates or finds the account, and returns short-lived access plus rotating refresh tokens.
-4. The server implements session revocation, rate limits, structured errors, and the complete authorization tests required by `AGENTS.md`.
+4. The server implements session revocation, rate limits, structured errors, and full authorization tests.
 
 The client keeps access tokens in memory and stores only the refresh token in the device Keychain. A client credential alone never changes the session to signed-in.
 
