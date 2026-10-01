@@ -2,31 +2,23 @@ import CoreGraphics
 
 /// Keeps a window inside the screen it is on.
 ///
-/// macOS restores the frame a window last had, and it does not check that the
-/// frame still fits. Atlas's own saved frame was 1728×1146 on a display with
-/// 1083 points of usable height: taller than the screen, positioned 63 points
-/// below the bottom, so the title bar sat above the top edge and the foot of
-/// every layout was cut off. From inside the app that is unfixable, because the
-/// controls you would use to fix it are the ones off screen.
+/// macOS restores the frame a window last had without checking that it still
+/// fits, e.g. a frame saved on a larger display. The result can hang off the
+/// screen with the title bar and resize handles out of reach.
 ///
 /// Pure arithmetic, kept apart from the AppKit plumbing so the clamping can be
 /// checked without a window.
 public enum WindowFrameFit {
+    /// How much screen a rescued window is left on each side. A window clamped
+    /// to exactly the visible frame has its edges flush with the screen's, so
+    /// there is no resize handle to grab.
+    public static let rescueMargin: CGFloat = 16
+
     /// The frame a window should have: at least `minimumSize`, never larger
     /// than the visible area, and fully inside it.
     ///
-    /// The order matters. Size is settled first and position second, because
-    /// moving a window that is too big only trades one cut-off edge for
-    /// another.
-    /// How much screen a rescued window is left on each side.
-    ///
-    /// A window corrected to exactly the visible frame is technically on screen
-    /// and still unusable: its edges sit flush with the screen's, so there is
-    /// no resize handle to grab and no way out of the size it is stuck at. That
-    /// was the actual complaint — "the bottom is cut off and I can't resize
-    /// it" — and clamping to the full visible frame does not fix it.
-    public static let rescueMargin: CGFloat = 16
-
+    /// Size is settled before position, because moving a window that is too
+    /// big only trades one cut-off edge for another.
     public static func fitted(
         _ frame: CGRect,
         in visible: CGRect,
@@ -37,12 +29,8 @@ public enum WindowFrameFit {
         // A minimum wider than the screen is not a minimum. The screen wins.
         let floor = minimum(minimumSize, in: visible)
 
-        // Left exactly as it is when it is inside the screen, big enough to
-        // use, and not spanning an entire axis. That last one matters: a
-        // window touching both edges of an axis has no handle to drag on that
-        // side, which is indistinguishable from being stuck — "the bottom is
-        // cut off and I can't resize it" describes a window ending exactly at
-        // the screen's edge just as well as one hanging past it.
+        // Left alone when it is on screen, big enough, and not spanning a whole
+        // axis (a window touching both edges has no handle to drag on that side).
         let spansAnAxis = frame.width >= visible.width || frame.height >= visible.height
         let bigEnough = frame.width >= floor.width && frame.height >= floor.height
         if visible.contains(frame), !spansAnAxis, bigEnough {
