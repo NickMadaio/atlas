@@ -65,7 +65,6 @@
 		A2000000000000000000000E /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		A2000000000000000000000F /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		A20000000000000000000010 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A20000000000000000000011 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		A20000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20000000000000000000013 /* AtlasDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasDesign.swift; sourceTree = "<group>"; };
 		A20000000000000000000014 /* RichMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichMarkdownView.swift; sourceTree = "<group>"; };
@@ -114,7 +113,6 @@
 		A40000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				A20000000000000000000011 /* AGENTS.md */,
 				A20000000000000000000010 /* README.md */,
 				A40000000000000000000002 /* Atlas */,
 				A40000000000000000000005 /* Config */,

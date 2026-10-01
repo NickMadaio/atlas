@@ -21,3 +21,7 @@ packages/AtlasCore/.swiftpm/
 
 # Local, uncommitted configuration layers (backend URLs, signing overrides)
 *.local.xcconfig
+
+# Local notes for coding assistants
+AGENTS.md
+CLAUDE.md

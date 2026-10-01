@@ -221,7 +221,7 @@ community" and "value shape". None of those are words. The deck contains
 reading the transcript is what lets it recognise a sound it would otherwise
 write down as nonsense.
 
-## Group work, and why notes used to fill up with it
+## Group work and crosstalk
 
 The recording runs through everything, including the twenty minutes where the
 class is in groups arguing about IKEA. Transcribed, that is several thousand
